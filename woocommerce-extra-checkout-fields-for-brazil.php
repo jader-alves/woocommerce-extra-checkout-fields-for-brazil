@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: Brazilian Market on WooCommerce
- * Plugin URI:  https://github.com/claudiosanches/woocommerce-extra-checkout-fields-for-brazil
+ * Plugin URI:  https://github.com/jader-alves/woocommerce-extra-checkout-fields-for-brazil
  * Description: Adds new checkout fields, field masks and other things necessary to properly work with WooCommerce on Brazil.
- * Author:      Claudio Sanches
+ * Author:      Claudio Sanches | Customizado por Jader Alves
  * Author URI:  https://claudiosanches.com
  * Version:     3.7.2
  * License:     GPLv2 or later

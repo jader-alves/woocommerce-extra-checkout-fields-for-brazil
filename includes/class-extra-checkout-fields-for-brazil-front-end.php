@@ -181,6 +181,7 @@ class Extra_Checkout_Fields_For_Brazil_Front_End {
 						'priority' => 26,
 					);
 				}
+
 			}
 		} else {
 			if ( isset( $fields['billing_company'] ) ) {
@@ -283,6 +284,79 @@ class Extra_Checkout_Fields_For_Brazil_Front_End {
 				$new_fields['billing_email']['clear'] = true;
 				$new_fields['billing_email']['type'] = 'email';
 			}
+
+
+			/*
+			$ano=intval(date("Y"));
+			$opcoes = [];
+			for ($i = 0; $i<=8; $i++ ){
+				$opcoes[intval($ano."1")]=$ano."."."1";
+				$opcoes[intval($ano."2")]=$ano."."."2";
+				$ano++;
+			}
+
+			$new_fields['formatura'] = array(
+				'type'        => 'select',
+				'label'       => 'Previsão de Formatura',
+				'class'       => array( 'form-row-first' ),
+				'input_class' => array( 'wc-ecfb-select' ),
+				'clear'       => true,
+				'required'    => false,
+				'options'     => array(
+					'' => __( 'Select', 'woocommerce-extra-checkout-fields-for-brazil' ),
+
+						'2021.1'=>'2021.1',
+						'2021.2'=>'2021.2',
+
+						'2022.1'=>'2022.1',
+						'2022.2'=>'2022.2',
+
+						'2023.1'=>'2023.1',
+						'2023.2'=>'2023.2',
+
+						'2024.1'=>'2024.1',
+						'2024.2'=>'2024.2',
+
+						'2025.1'=>'2025.1',
+						'2025.2'=>'2025.2',
+
+						'2026.1'=>'2026.1',
+						'2026.2'=>'2026.2',
+
+						'2027.1'=>'2027.1',
+						'2027.2'=>'2027.2',
+
+						'2028.1'=>'2028.1',
+						'2028.2'=>'2028.2',
+
+						'2029.1'=>'2029.1',
+						'2029.2'=>'2029.2',
+
+						'2030.1'=>'2030.1',
+						'2030.2'=>'2030.2',
+
+				),
+				'priority'    => 200,
+			);
+
+			$new_fields['comissao'] = array(
+				'type'        => 'select',
+				'label'       => 'Você é da Comissão de Formatura?',
+				'class'       => array( 'form-row-last' ),
+				'input_class' => array( 'wc-ecfb-select' ),
+				'clear'       => true,
+				'required'    => false,
+				'options'     => array(
+					'' => __( 'Select', 'woocommerce-extra-checkout-fields-for-brazil' ),
+					0 => 'Não',
+					1 => 'Sim',
+				),
+				'priority'    => 201,
+			);
+			*/
+
+
+
 		} else {
 			if ( isset( $fields['billing_phone'] ) ) {
 				$new_fields['billing_phone'] = $fields['billing_phone'];
