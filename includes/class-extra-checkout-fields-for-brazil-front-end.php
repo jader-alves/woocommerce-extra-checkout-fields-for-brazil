@@ -286,7 +286,7 @@ class Extra_Checkout_Fields_For_Brazil_Front_End {
 			}
 
 
-			/*
+
 			$ano=intval(date("Y"));
 			$opcoes = [];
 			for ($i = 0; $i<=8; $i++ ){
@@ -353,7 +353,7 @@ class Extra_Checkout_Fields_For_Brazil_Front_End {
 				),
 				'priority'    => 201,
 			);
-			*/
+
 
 
 
