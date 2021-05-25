@@ -287,6 +287,7 @@ class Extra_Checkout_Fields_For_Brazil_Front_End {
 
 
 
+			/*
 			$ano=intval(date("Y"));
 			$opcoes = [];
 			for ($i = 0; $i<=8; $i++ ){
@@ -294,6 +295,7 @@ class Extra_Checkout_Fields_For_Brazil_Front_End {
 				$opcoes[intval($ano."2")]=$ano."."."2";
 				$ano++;
 			}
+			*/
 
 			$new_fields['formatura'] = array(
 				'type'        => 'select',
@@ -354,7 +356,40 @@ class Extra_Checkout_Fields_For_Brazil_Front_End {
 				'priority'    => 201,
 			);
 
+			$new_fields['faculdade'] = array(
+				'type'        => 'text',
+				'label'       => 'Faculdade:',
+				'class'       => array( 'form-row-first' ),
+				'input_class' => array( 'wc-ecfb-select' ),
+				'clear'       => true,
+				'required'    => false,
+				'priority'    => 202
+			);
 
+			$new_fields['curso'] = array(
+				'type'        => 'text',
+				'label'       => 'Curso:',
+				'class'       => array( 'form-row-last' ),
+				'input_class' => array( 'wc-ecfb-select' ),
+				'clear'       => true,
+				'required'    => false,
+				'priority'    => 203
+			);
+
+			/*
+
+			$affiliate = 0;
+			if(isset($_SESSION["affiliate"]))
+				$affiliate = $_SESSION["affiliate"];
+
+
+
+			$new_fields['affiliate'] = array(
+				'type'        => 'hidden',
+				'value'		=> $affiliate,
+				'priority'    => 300,
+			);
+			*/
 
 
 		} else {
